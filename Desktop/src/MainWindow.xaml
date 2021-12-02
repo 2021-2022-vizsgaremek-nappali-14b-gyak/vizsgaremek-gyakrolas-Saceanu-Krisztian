@@ -21,7 +21,7 @@
         
         <Grid Width="250" x:Name="LeftPanel" HorizontalAlignment="Left">
 
-            <Grid x:Name="PageLogo" Height="150" VerticalAlignment="Top" Background="DarkGoldenrod"> 
+            <Grid x:Name="PageLogo" Height="150" VerticalAlignment="Top" Background="PaleGoldenrod"> 
             </Grid>
             <Grid x:Name="PageMenu" Height="874" Width="250" VerticalAlignment="Bottom" HorizontalAlignment="Left" Background="DarkBlue">
             </Grid>

@@ -10,7 +10,7 @@ namespace Vizsgaremek.Navigation
     public static class Navigate
     {
 
-        private static MainWindow mainwindow;
+        public static MainWindow mainwindow;
 
         public static void Navigation(UserControl usercontrol)
         {
