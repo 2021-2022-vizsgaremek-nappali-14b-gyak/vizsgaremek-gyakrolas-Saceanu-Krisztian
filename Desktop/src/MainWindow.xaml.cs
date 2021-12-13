@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Vizsgaremek.Navigation;
+using Vizsgaremek.Pages;
 
 namespace Vizsgaremek
 {
@@ -20,9 +22,20 @@ namespace Vizsgaremek
     /// </summary>
     public partial class MainWindow : Window
     {
+        
         public MainWindow()
         {
             InitializeComponent();
+
+            //Statikus osztály a Navigate
+            //Eltárolja a nyitó ablakot, hogy azon tudjuk módosítani a "page"-ket
+            Navigate.mainwindow = this;
+
+            //Létrehozzuk a nyitó "userControl" ( welcomePage)
+            WelcomePage welcomePage = new WelcomePage();
+
+            //megjelenítjük a welcomePage-t
+            Navigate.Navigation(welcomePage);
         }
     }
 }
