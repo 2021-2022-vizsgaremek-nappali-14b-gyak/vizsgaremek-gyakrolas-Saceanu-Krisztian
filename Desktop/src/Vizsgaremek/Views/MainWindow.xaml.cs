@@ -55,6 +55,8 @@ namespace Vizsgaremek
                     case "lviExit":
                         Close();
                         break;
+                   
+
                 }
             }
         }
