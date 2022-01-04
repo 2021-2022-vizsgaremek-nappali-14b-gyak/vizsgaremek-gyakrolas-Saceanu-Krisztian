@@ -25,7 +25,7 @@ namespace Vizsgaremek.Navigation
 
         }
 
-        public static void NavigationToFullScreen(UserControl userPage)
+        public static void NavigationToFullScreen(Page userPage)
         {
         
             mainWindow.Content = userPage;
